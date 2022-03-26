@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #263238;
+}
+.parent-div{
+    margin-top: 300px;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loader {
+    margin: 50px auto;
+    display: block;
+}
+
+.border {
+    width: 0;
+    height: 0;
+    border: 20px solid rgba(161,126,230,0.2);
+    border-top-color: #a17ee6;
+    box-shadow: 0 0 0 1px rgba(161,126,230,0.2);
+    border-radius: 100%;
+    -webkit-animation: border-loader infinite 0.8s linear;
+    animation: border-loader infinite 0.8s linear;
+}
+.bar {
+    width: 100px;
+    height: 10px;
+    background: rgba(161,126,230,0.2);
+    border-right: 90px solid #a17ee6;
+    border-left: 0 solid #a17ee6;
+    box-shadow: 0 0 0 1px rgba(161,126,230,0.2);
+    -webkit-animation: bar-loader infinite 1.5s linear;
+    animation: bar-loader infinite 1.5s linear;
+}
+@-webkit-keyframes border-loader {
+    0% {
+        border-color: rgba(161,126,230,0.2);
+        border-top-color: #a17ee6;
+    }
+    25% {
+        border-color: rgba(161,126,230,0.2);
+        border-right-color: #a17ee6;
+    }
+    50% {
+        border-color: rgba(161,126,230,0.2);
+        border-bottom-color: #a17ee6;
+    }
+    75% {
+        border-color: rgba(161,126,230,0.2);
+        border-left-color: #a17ee6;
+    }
+}
+@keyframes border-loader {
+    0% {
+        border-color: rgba(161,126,230,0.2);
+        border-top-color: #a17ee6;
+    }
+    25% {
+        border-color: rgba(161,126,230,0.2);
+        border-right-color: #a17ee6;
+    }
+    50% {
+        border-color: rgba(161,126,230,0.2);
+        border-bottom-color: #a17ee6;
+    }
+    75% {
+        border-color: rgba(161,126,230,0.2);
+        border-left-color: #a17ee6;
+    }
+}
+@-webkit-keyframes bar-loader {
+    50% {
+        border-left: 90px solid rgba(161,126,230,0.2);
+        border-right: 0 solid rgba(161,126,230,0.2);
+    }
+}
+@keyframes bar-loader {
+    50% {
+        border-left: 90px solid rgba(161,126,230,0.2);
+        border-right: 0 solid rgba(161,126,230,0.2);
+    }
+}
